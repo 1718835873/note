@@ -1,0 +1,50 @@
+
+.header-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.list-item{
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  border-bottom: 1px solid #ccc;
+  letter-spacing: 1px;
+}
+.list-item:first-child{
+  border-top: 1px solid #ccc;
+}
+.img{
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+.like-btn{
+  width: 100% !important;
+  height: 100rpx;
+  line-height: 60rpx;
+  background: white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+.out{
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  background: white;
+  font-weight: 400;
+  /* width: 50px!important;
+  height: 20px !important; */
+  color: #222;
+  /* font-size: 13px; */
+  margin-top: 6px;
+}
+button:not([size='mini']) {
+min-height: 20px;
+width: 184px;
+margin-left: auto;
+margin-right: auto;
+}

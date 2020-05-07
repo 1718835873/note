@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/info/info",
+    "pages/calendar/calendar",
+    "pages/tag/tag",
+    "pages/write/write",
+    "pages/search/search",
+    "pages/set/set",
+    "pages/edit/edit",
+    "pages/love/love",
+    "pages/style/style",
+    "pages/xieyi/xieyi",
+    "pages/yinsi/yinsi",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f84052",
+    "navigationBarTitleText": "一日一记",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f84052",
+    "color": "#bfbfbf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/tabar/shouye.png",
+        "selectedIconPath": "./images/tabar/shouye-active.png"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "text": "日历",
+        "iconPath": "./images/tabar/rili.png",
+        "selectedIconPath": "./images/tabar/rili-active.png"
+      },
+      {
+        "pagePath": "pages/tag/tag",
+        "text": "标签",
+        "iconPath": "./images/tabar/biaoqian.png",
+        "selectedIconPath": "./images/tabar/biaoqian-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

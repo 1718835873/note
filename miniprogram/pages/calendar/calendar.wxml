@@ -1,0 +1,33 @@
+
+<view class="calendar-area">
+<!-- 头部 -->
+ <view class="calendar-header-area">
+  <view class="date-title">{{monthAndDay}}</view>
+  <view class="right-area">
+    <view class="right-title">
+      <view class="year">{{year}}</view>
+      <view class="year">阳历</view>
+    </view>
+    <view class="btn-area-month">
+      <view class="last-month" bindtap="lastMonth">上月</view>
+      <view class="next-month" bindtap="nextMonth">下月</view>
+    </view>
+  </view>
+ </view>
+ <!-- 头部 -->
+ <view class="week">
+  <view class="week-item">一</view>
+  <view class="week-item">二</view>
+  <view class="week-item">三</view>
+  <view class="week-item">四</view>
+  <view class="week-item">五</view>
+  <view class="week-item">六</view>
+  <view class="week-item">日</view>
+ </view>
+ <view class="day">
+  <view class="day-item {{current}}" wx:for="{{day}}">{{item}}</view>
+ </view>
+ <!-- 内容区域 -->
+ <view class="set-month">{{month}}月</view>
+ <!-- 内容区域 -->
+</view>

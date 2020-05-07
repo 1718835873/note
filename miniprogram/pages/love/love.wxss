@@ -1,0 +1,74 @@
+/* 内容区域 */
+.area{
+  margin: 20rpx;
+}
+.date{
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  color: #666;
+  font-size: 14px
+}
+
+.note-pan{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 2px 3px 5px #cccc;
+}
+.pan-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.pan-left{
+  display: flex;
+  flex-direction: row;  
+}
+.time{
+  margin-right: 20rpx;
+}
+
+.pan-bottom{
+  color:#444;
+  font-family: "黑体";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical;
+  flex-direction: column;
+}
+.icon-color{
+  color: #f84052;
+}
+.icon-color1{
+  color: #ccc;
+}
+.note-list{
+  margin-bottom: 20px;
+}
+.date{
+  margin-left: 20rpx;
+}
+.icon-shoucang{
+  padding: 10rpx;
+}
+
+/* 设置图片 */
+.set-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+.info{
+  color: skyblue;
+  margin-top: 40rpx;
+}

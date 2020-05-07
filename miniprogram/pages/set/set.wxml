@@ -1,0 +1,15 @@
+
+<view class="header-area">
+  <image src="{{imgurl}}" mode="widthFix" class="img"></image>
+  <view class="setName"><text class="name">{{nickname}}</text> | <navigator class="out" open-type="exit"  target="miniProgram">退出</navigator> </view>
+</view>
+
+<view class="list-area">
+  <navigator class="list-item"  url="../love/love">我的收藏</navigator> 
+  <navigator class="list-item" url="../tag/tag?type=1" open-type="reLaunch">我的标签</navigator>
+  <navigator class="list-item" url="../yinsi/yinsi">隐私政策</navigator>
+  <navigator class="list-item" url="../xieyi/xieyi">用户协议</navigator>
+  <button class="list-item like-btn"
+          open-type="feedback">意见反馈</button>
+  <navigator class="list-item" url="../about/about">关于我们</navigator>
+</view>

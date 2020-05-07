@@ -1,0 +1,26 @@
+<view class="dialog-area" wx:if="{{isShow}}">
+  <view class="hidden-area" bindtap="hiden"></view>
+  <view class="mian-area">
+    <view class="container">
+      <view class="dialog-title">
+        <view class="tag-title">标签名称:</view>
+        <input type="input" class="title-input" placeholder="请输入标签名称"></input>
+      </view>
+      <view class="choice-tag">
+        <view class="logo">图标选择:</view>
+        <view class="logo-num">1</view>
+      </view>
+      <view class="log-area">
+        <block>
+          <view  wx:for="{{10}}">
+            <image src="../../images/untitled.png" mode="widthFix" class="log-circle"></image>
+          </view>
+        </block>
+      </view>
+      <view class="btn-area">
+        <view class="cancel">取消</view>
+        <view class="acertain">确定</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="tag-icon">
+  <text bindtap="edit">√</text>
+</view>
+
+<view class="main-area">
+  <view class="tag">
+    <view><text class="iconfont icon-biaoqian"></text> {{tagName}}</view>
+    <view class="right-icon">
+      <text class="iconfont icon-shoucang {{love?'icon-color':'icon-color1'}}" bindtap="love"></text>
+      <text class="iconfont icon-lajitong" bindtap="del"></text>
+    </view>
+  </view>
+  <view class="tag-area">
+    <view class="title">标题:</view>
+    <input type="text" placeholder="标题不能为空" value="{{title}}" bindinput="getTitle"></input>
+  </view>
+  <textarea  placeholder="内容不能为空" value="{{content}}" bindinput="getContent"></textarea>
+</view>

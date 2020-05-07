@@ -1,0 +1,27 @@
+
+<view class="set-img" wx:if="{{!isShow}}">
+  <image src="../../images/untitled.png" mode="widthFix"></image>
+  <view class="info">还未有任何收藏笔记!</view>
+</view>
+
+<view class="area" wx:else>
+  <view class="note-list" wx:for="{{loveNotes}}">
+    <view class="date">{{item.date}}</view>
+    <view class="note-pan" data-id="{{item._id}}" bindtap="edit">
+      <view class="pan-top">
+        <view class="pan-left">
+          <view class="time">{{item.time}}</view>
+          <view class="note-title">{{item.title}}</view>
+        </view>
+        <view class="iocn-area">
+          <view class="iconfont icon-shoucang {{item.love?'icon-color':'icon-color1'}}" catchtap="love" data-id="{{item._id}}"></view>
+        </view>
+      </view>
+      <view class="pan-bottom">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+</view>
+
+

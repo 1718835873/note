@@ -1,0 +1,12 @@
+<view class="navbar-area">
+  <view class="navbar-wrap">
+    <view wx:for="{{nav}}" 
+          wx:key="id"
+          class="nav-item {{item.isActive?'active-item':''}}"
+          data-index="{{index}}"
+          bindtap="handleChangeItem">{{item.value}}</view>
+  </view>
+  <view class="cont-area">
+    <slot></slot>
+  </view>    
+</view>

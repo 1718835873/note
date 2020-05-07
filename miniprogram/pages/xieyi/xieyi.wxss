@@ -1,0 +1,13 @@
+.xieyi{
+  padding: 20rpx;
+}
+.title{
+  font-size: 18px;
+  text-align: center;
+}
+.note{
+  text-indent: 24px;
+}
+.content{
+  text-indent: 24px;
+}

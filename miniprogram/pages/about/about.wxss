@@ -1,0 +1,32 @@
+.note{
+  margin: 20rpx;
+}
+.note-area{
+  padding: 20rpx;
+  border: 1p solid #ccc;
+  box-shadow: 2px 2px  5px #ccc;
+  border-radius: 20rpx;
+
+}
+.about{
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10rpx;
+}
+.content{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.bottom-note{
+  position: fixed;
+  width: 100%;
+  bottom: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+image{
+  width: 120px;
+  margin-bottom: 20rpx;
+}

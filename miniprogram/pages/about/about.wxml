@@ -1,0 +1,11 @@
+<view class="note">
+  <view class="note-area">
+    <view class="about">关于NOTE笔记</view>
+    <view class="content">记录您生活、旅行、日记、学习、工作中的点点滴滴，正珍贵内容永久保存，信息加密绝不外泄，做你最安全恒久的好搭档</view>
+  </view>
+
+  <view class="bottom-note">
+    <image src="../../images/logo.png"mode="widthFix"></image>
+    <view class="banben">版本号:1.0.1</view>
+  </view>
+</view>

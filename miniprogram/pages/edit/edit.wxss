@@ -1,0 +1,82 @@
+.tag-icon{
+  margin-right: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  right: 20rpx;
+  top: 90rpx;
+}
+.tag-icon>text{
+  font-size: 26px;
+  font-weight: bold;
+  border:2px solid #f05842;
+  width: 30px;
+  height: 30px;
+  background: white;
+  line-height: 28px;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  float: right;
+  text-align: center;
+  color: #f05842;
+}
+
+/* 内容区域 */
+.tag>icon{
+  font-size: 14px;
+  padding: 2px;
+  border:1px solid #f05842;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 50%;
+  float: right;
+  text-align: center;
+  color: #f05842;
+}
+.main-area{
+  margin: 14px;
+}
+.tag{
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.tag>.icon-biaoqian{
+  font-size: 26px;
+}
+.tag-area{
+  display: flex;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+}
+.title{
+  font-family: "微软雅黑";
+  font-weight: 500;
+  margin-right: 10px;
+}
+textarea{
+  margin-top: 16px;
+  font-weight: 12px;
+  width: 100%;
+  line-height: 30px;
+}
+.tag{
+  display: flex;
+  justify-content: space-between;
+}
+.right-icon{
+  width:150rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.iconfont{
+  font-size: 20px;
+}
+.icon-color{
+  color: #f84052;
+}
+.icon-color1{
+  color: #555;
+}

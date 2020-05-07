@@ -1,0 +1,16 @@
+.quan-area{
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 100rpx;
+}
+.quan-area>image{
+  width:150rpx;
+  margin-bottom: 30rpx;
+}
+.quan-area>button{
+  width: 120px;
+  font-weight: 400;
+}

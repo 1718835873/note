@@ -1,0 +1,59 @@
+<view class="tag-icon">
+  <text bindtap="addTag">+</text>
+</view>
+<view class="main-area">
+  <block wx:for="{{tags}}" wx:key="index">
+    <movable-area class="move-area">
+      <movable-view class="move-view"
+                    direction="horizontal"
+                    inertia="true"
+                    x="{{isOpen? '-210rpx':'0rpx'}}"
+                    out-of-bounds="true">
+        <view class="left-area" data-name="{{item.tagName}}" bindtap="writeNote" >
+          <image src="{{item.logoUrl}}"
+                mode="widthFix"
+                class="img-logo">
+          </image>
+          <view>{{item.tagName}}</view>
+        </view>
+        <view class="right-area">
+          <view class="editor" bindtap="edtor" data-id="{{item._id}}">编辑</view>
+          <view class="del" bindtap="del" data-id="{{item._id}}">删除</view>
+        </view>
+      </movable-view>
+    </movable-area>
+  </block>
+</view>
+<!-- 对话框 -->
+<view class="dialog-area" wx:if="{{isShow}}">
+  <view class="hidden-area" bindtap="hiden"></view>
+  <view class="mian-area">
+    <view class="container">
+      <view class="dialog-title">
+        <view class="tag-title">标签名称:</view>
+        <input type="input"
+               class="title-input"
+               placeholder="请输入标签名称"
+               bindinput="getTagName"></input>
+      </view>
+      <view class="choice-tag">
+        <view class="logo">图标选择:</view>
+        <view class="logo-num">{{num}}</view>
+      </view>
+      <view class="log-area">
+          <view  wx:for="{{pics}}" wx:key="item.picId">
+            <image src="{{item.picUrl}}"
+                   mode="widthFix" 
+                   class="log-circle"
+                   data-url="{{item.picUrl}}" 
+                   data-picitem="{{item.picItem}}"
+                   bindtap="chooseLog"></image>
+          </view>
+      </view>
+      <view class="btn-area">
+        <view class="cancel" bindtap="cancel">取消</view>
+        <view class="acertain" bindtap="acertain">确定</view>
+      </view>
+    </view>
+  </view>
+</view>

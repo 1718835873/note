@@ -1,0 +1,25 @@
+.search{
+  height: 80rpx;
+  width: 100%;
+  background: #d62a26;
+}
+.search-wrap{
+  width: 90%;
+  height: 80rpx;
+  margin: 0px auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 36rpx;
+  padding-left: 20rpx;
+}
+.search-item{
+  margin-right: 10rpx;
+}
+.font-item{
+  vertical-align: middle;
+  display: flex;
+}
+.search-cont{
+  color: #666;
+}

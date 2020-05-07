@@ -1,0 +1,31 @@
+<view class="search-bar">
+  <view class="search-area">
+    <view class="left-bar">
+      <text class="iconfont icon-sousuo"></text>
+      <input type="text" placeholder="搜索笔记" bindinput="searchValue"></input>
+    </view>
+    <view class="right-bar">
+      <view bindtap="search" bindconfirm="search">搜索</view>
+    </view>
+  </view>
+</view>
+
+<view class="area" wx:if="{{isShow}}">
+  <view class="note-list" wx:for="{{notes}}">
+    <view class="date">{{item.date}}</view>
+    <view class="note-pan" bindtap="index">
+      <view class="pan-top">
+        <view class="pan-left">
+          <view class="time">{{item.time}}</view>
+          <view class="note-title">{{item.title}}</view>
+        </view>
+        <view class="iocn-area">
+          <view class="iconfont icon-shoucang {{item.love?'icon-color':'icon-color1'}}"></view>
+        </view>
+      </view>
+      <view class="pan-bottom">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+</view>

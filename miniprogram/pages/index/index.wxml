@@ -1,0 +1,35 @@
+<view class="header-area">
+  <view class="note">全部笔记({{noteNum}})</view>
+  <view class="right-area">
+    <view class="search-bar">
+      <text class="iconfont icon-sousuo" bindtap="Search"></text>
+    </view>
+    <view class="shezhi">
+      <text class="iconfont icon-shezhi" bindtap="set"></text>
+    </view>
+  </view>
+</view>
+<view class="main-area" wx:if="{{showData}}">
+    <image src="../../images/untitled.png" class="blank" mode="widthFix"></image>
+    <view>记录你的生活点滴</view>
+    <view>这里将有美好回忆</view>
+</view>
+<view class="area" wx:else>
+  <view class="note-list" wx:for="{{notes}}">
+    <view class="date">{{item.date}}</view>
+    <view class="note-pan"  bindlongtap="del" data-id="{{item._id}}" bindtap="edit">
+      <view class="pan-top">
+        <view class="pan-left">
+          <view class="time">{{item.time}}</view>
+          <view class="note-title">{{item.title}}</view>
+        </view>
+        <view class="iocn-area">
+          <view class="iconfont icon-shoucang {{item.love?'icon-color':'icon-color1'}}" catchtap="love" data-id="{{item._id}}"></view>
+        </view>
+      </view>
+      <view class="pan-bottom">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+</view>

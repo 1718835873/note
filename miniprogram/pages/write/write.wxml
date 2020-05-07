@@ -1,0 +1,12 @@
+
+<view class="main-area">
+  <view class="tag">
+    <view><text class="iconfont icon-biaoqian"></text> {{tagName}}</view>
+    <icon type="success_no_circle" color="#f05842" bindtap="addNote"size="20"></icon>
+  </view>
+  <view class="tag-area">
+    <view class="title">标题:</view>
+    <input type="text" placeholder="标题不能为空" bindinput="getTitle"></input>
+  </view>
+  <textarea  placeholder="内容不能为空" bindinput="getContent"></textarea>
+</view>

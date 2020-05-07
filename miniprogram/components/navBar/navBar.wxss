@@ -1,0 +1,15 @@
+.navbar-wrap{
+  height: 90rpx;
+  display: flex;
+}
+.nav-item{
+  flex: 1;
+  text-align: center;
+  margin: 0rpx 14rpx;
+  line-height: 90rpx;
+}
+.active-item{
+  color:tomato;
+  border-bottom: 5rpx solid tomato;
+  font-weight: bold;
+}

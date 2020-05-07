@@ -1,0 +1,76 @@
+
+
+.calendar-header-area{
+  display: flex;
+  height: 140rpx;
+  align-items: center;
+  padding: 20rpx;
+}
+.date-title{
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 20rpx;
+}
+.right-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.right-area{
+  width: 500rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-area-month{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.last-month{
+  background: salmon;
+  padding: 8rpx 14rpx;
+  color: white;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+}
+.next-month{
+  background: skyblue;
+  padding: 8rpx 20rpx;
+  color: white;
+  border-radius: 10rpx;
+}
+.week{
+  display: flex;
+  justify-content: space-around;
+  height: 100rpx;
+  align-items: center;
+}
+.day{
+  display: flex;
+  flex-wrap: wrap;
+}
+.day-item{
+  width: 14.2%;
+  text-align: center;
+  height: 70rpx;
+}
+.set-month{
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  left: 50%;
+  line-height: 100rpx;
+  background: #27B3EF;
+  border-radius: 50%;
+  margin-left: -50rpx;
+  color: white;
+  text-align: center;
+  bottom: 260rpx;
+}
+
+.currentday{
+  color: green;
+  background: #c0c0c0;
+}

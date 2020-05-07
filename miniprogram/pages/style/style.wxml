@@ -1,0 +1,34 @@
+<view class="main-area" wx:if="{{showData}}">
+    <image src="../../images/untitled.png" class="blank" mode="widthFix"></image>
+    <view>记录你的生活点滴</view>
+    <view>点击下方的画笔图标，开始书写精彩咩一天</view>
+
+    <view class="icon-wrap">
+      <view class="iconfont icon-bishi"></view>
+      <view class="iconfont icon-icon-biaoqian"></view>
+    </view>
+</view>
+<view class="area" wx:else>
+  <view class="note-list" wx:for="{{notes}}">
+    <view class="date">{{item.date}}</view>
+    <view class="note-pan" data-id="{{item._id}}" bindtap="edit">
+      <view class="pan-top">
+        <view class="pan-left">
+          <view class="time">{{item.time}}</view>
+          <view class="note-title">{{item.title}}</view>
+        </view>
+        <view class="iocn-area">
+          <view class="iconfont icon-shoucang {{item.love?'icon-color':'icon-color1'}}" catchtap="love" data-id="{{item._id}}"></view>
+        </view>
+      </view>
+      <view class="pan-bottom">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="icon-wrap">
+   <view class="iconfont icon-bishi" bindtap="write"></view>
+   <view class="iconfont icon-icon-biaoqian" bindtap="tag"></view>
+</view>

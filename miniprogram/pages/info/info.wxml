@@ -1,0 +1,7 @@
+
+
+
+<view class="quan-area">
+  <image src="../../images/logo.png" mode="widthFix"></image>
+  <button open-type="getUserInfo" bindgetuserinfo="handlerInfo">授权登录</button>
+</view>
